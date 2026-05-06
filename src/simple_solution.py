@@ -39,7 +39,7 @@ pipeline.fit(df_train[features], df_train['label'])
 # 1. Ewaluacja na zbiorze treningowym
 print("Ewaluacja na zbiorze treningowym:")
 train_acc = pipeline.score(df_train[features], df_train['label'])
-print(f"Training Accuracy: {train_acc:.4f}")
+print(f"Dokładność(treningowy): {train_acc:.4f}")
 
 
 # 2. Ewaluacja na zbiorze walidacyjnym
@@ -47,12 +47,12 @@ print("\nEwaluacja na zbiorze walidacyjnym:")
 y_pred = pipeline.predict(df_val[features])
 val_f1 = f1_score(df_val['label'], y_pred, average='macro')
 
-print(f"Validation F1:  {val_f1:.4f}")
-print("\nValidation Report:")
+print(f"F1(walidacyjny):  {val_f1:.4f}")
+print("\nRaport(walidacyjny):")
 print(classification_report(df_val['label'], y_pred))
 ###################
 
-#### Ewaluacja ####
+#### Ewaluacja właściwa####
 print("\nEwaluacja na zbiorze testowym:")
 y_pred = pipeline.predict(df_test[features])
 print(f"F1: {f1_score(df_test['label'], y_pred):.4f}")
