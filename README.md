@@ -21,5 +21,5 @@ Zadanie jest realizowane na podstawie [zadania](https://www.kaggle.com/datasets/
 
 # Interfejs zadania
 
-Przykładowe, bardzo proste rozwiązanie znajduje się w pliku src/sample_solution.py. Wykorzystaj ten sam schemat rozwiązania. W tym samym pliku znajduje się fragment oznaczony jako ewaluacja. Ten sposób ewaluacji zostanie wykorzystany do oceny rozwiązania.
+Przykładowe, bardzo proste rozwiązanie znajduje się w pliku src/simple_solution.py. Wykorzystaj ten sam schemat rozwiązania. W tym samym pliku znajduje się fragment oznaczony jako ewaluacja. Ten sposób ewaluacji zostanie wykorzystany do oceny rozwiązania.
 

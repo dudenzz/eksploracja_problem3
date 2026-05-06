@@ -12,7 +12,7 @@ full_test_path = os.path.join(download_path, test_filename)
 
 with open('src/config.py', 'w+', encoding='utf-8') as f:
     f.write(f'traindatapath = {repr(full_train_path)}\n')
-    f.write(f'testdatapath = {repr(full_val_path)}\n')
-    f.write(f'valdatapath = {repr(full_test_path)}')
+    f.write(f'testdatapath = {repr(full_test_path)}\n')
+    f.write(f'valdatapath = {repr(full_val_path)}')
 
 print(f"Sukces! Ścieżka zapisana w config.py: {download_path}")
